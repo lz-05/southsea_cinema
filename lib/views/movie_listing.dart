@@ -34,14 +34,13 @@ class MovieListing extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Placeholder for future widgets (e.g., rating stars, favourite icon)
-                // Icon(Icons.star, color: Colors.amber),
+                // Placeholder for future widgets
               ],
             ),
 
             const SizedBox(height: 12),
 
-            // DESCRIPTION (still part of the Column)
+            // DESCRIPTION 
             const Text(
               'A thrilling journey across mysterious lands, following a group of explorers as they uncover ancient secrets.',
               style: TextStyle(
@@ -49,9 +48,22 @@ class MovieListing extends StatelessWidget {
                 height: 1.4,
               ),
             ),
+            
+            const SizedBox(height: 24),
+
+            // FUTURE WIDGETS arranged in a Row
+            Row(
+              children: const [
+                Text(
+                  'More widgets coming soon...',
+                  style: TextStyle(color: Colors.grey),
+                ),
+              ],
+            ),
           ],
         ),
       ),
     );
   }
 }
+
